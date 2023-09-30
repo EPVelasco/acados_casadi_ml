@@ -1,4 +1,4 @@
-# ml_casadi_acados
+# acados_casadi_ml
 Its a docker file of ML-Casadi, acados and ROS 
 ## Build Docker
 ```
