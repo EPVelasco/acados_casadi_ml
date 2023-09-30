@@ -2,7 +2,7 @@
 Its a docker file of ML-Casadi, acados and ROS 
 ## Build Docker
 ```
-git clone https://github.com/EPVelasco/ml_casadi_acados.git
+git clone https://github.com/EPVelasco/acados_casadi_ml.git
 cd ml_casadi_acados
 sudo docker build -t ml_casadi_acados .
 
