@@ -96,15 +96,3 @@ RUN sudo chmod +x  ${HOME}/ml_casadi/src/acados/bin/t_renderer
 
 ## Clone the drone reposiroty 
 RUN cd ${HOME}/ml_casadi/src/ && git clone https://github.com/lfrecalde1/Pendulum_cart.git
-
-RUN apt-get update && apt-get install -y \
-    x11-apps
-
-# Configura la variable de entorno DISPLAY
-ENV DISPLAY=:0    
-
-# Allow use of NVIDIA card
-RUN export CUDA_VISIBLE_DEVICES=[0]
-ENV NVIDIA_VISIBLE_DEVICES ${NVIDIA_VISIBLE_DEVICES:-all}
-ENV NVIDIA_DRIVER_CAPABILITIES ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
-
