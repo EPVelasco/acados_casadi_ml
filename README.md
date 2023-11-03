@@ -1,11 +1,10 @@
 # acados_casadi_ml
-Its a docker file of ML-Casadi, acados and ROS 
+Its a docker file of ML-Casadi, Acados and ROS-Noetic or AMD architecture.
 ## Build Docker
 ```
 git clone https://github.com/EPVelasco/acados_casadi_ml.git
 cd acados_casadi_ml
 sudo docker build -t acados_casadi_ml .
-
 ```
 ## Run container
 ```
